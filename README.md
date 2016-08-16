@@ -1,8 +1,6 @@
 # COX-Challenge
 
-1.6: In the programming language of your choice, write a method that modifies a string using the
-
-following rules:
+In the programming language of your choice, write a method that modifies a string using the following rules:
 
 1. Each word in the input string is replaced with the following: the first letter of the word, the count of
 
