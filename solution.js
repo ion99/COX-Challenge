@@ -10,7 +10,6 @@ function modifier(string){
   }
   let result = [];
   let matches = string.match(/[a-zA-Z]+/g);
-  //console.log(matches);
   for (let i = 0; i < matches.length; i++){
     if(matches[i].length === 1) {
       let str = "";
@@ -19,13 +18,11 @@ function modifier(string){
     }
     if(matches[i].length > 1){
       let str = "";
-      //console.log(matches[i].substr(1, matches[i].length - 2));
-    str += matches[i][0] + check(matches[i].substr(1, matches[i].length - 2)) + matches[i][matches[i].length - 1];
-    result.push(str);
+      str += matches[i][0] + check(matches[i].substr(1, matches[i].length - 2)) + matches[i][matches[i].length - 1];
+      result.push(str);
     }
   }
-  return result.join(" ");
-  
+  return result.join(" "); 
 }
 
 //modifier("Hello my name is Ion");
